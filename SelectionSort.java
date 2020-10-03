@@ -1,3 +1,5 @@
+import java.util.*;
+
 class Selection
 {
 
@@ -33,12 +35,17 @@ class Selection
 public class SelectionSort {
 
     public static void main(String[] args) {
-        
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] array = new int[n];
+        for(int i-0;i<n;i++){
+            array[i] = sc.nextInt();
+        }
         int Array[] = {1,2,3,4,5,6,7,8,9};
 
         Selection s1 = new Selection();
         long startTime = System.nanoTime();̥
-        int sortedArray[] = s1.sorting(Array, 9);
+        int sortedArray[] = s1.sorting(array , n);
         long endTime = System.nanoTime();
 
         for (int i = 0; i < 9; i++) {
